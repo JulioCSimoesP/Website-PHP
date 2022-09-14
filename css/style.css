@@ -1,0 +1,379 @@
+/*variáveis*/
+:root{
+    --default-background: #33363b;
+    --darker-background: #2C2F33;
+    --default-font-color: #ffffff;
+    --unclickable-text-color: #11FFEE;
+    --clickable-text-color: #ffffff;
+    --common-text-color: #000000;
+}
+
+/*fontes*/
+@font-face {
+    font-family: squada;
+    src: url('../fonts/squadaone-regular-webfont.woff2') format('woff2'),
+    url('../fonts/squadaone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*reset*/
+html, body{
+    margin:0;
+    padding: 0;
+    height: 100%;
+}
+h1, h3, ul, p{
+    margin: 0;
+    padding: 0;
+}
+
+/*estilos básicos*/
+html, body{
+    font-family: squada;
+    letter-spacing: 0.08em;
+}
+.unclickable-color{
+    color: var(--unclickable-text-color);
+}
+.sign{
+    box-shadow: rgba(17, 255, 238, 0.4) 2px 2px 4px,
+    rgba(17, 255, 238, 0.3) 2px 7px 13px -3px,
+    rgba(17, 255, 238, 0.2) -2px -2px 0px inset;
+    border-radius: 5px;
+    padding: 1em;
+    background: var(--darker-background);
+}
+.form-sign{
+    box-shadow: rgba(17, 255, 238, 0.4) 2px 2px 4px,
+    rgba(17, 255, 238, 0.3) 2px 7px 13px -3px,
+    rgba(17, 255, 238, 0.2) -2px -2px 0px inset;
+    border-radius: 5px;
+    padding: 1em;
+    background: var(--darker-background);
+}
+.page-title{
+    text-align: center;
+    min-width: 168px;
+}
+.page-sub-title{
+    text-align: center;
+    min-width: 168px;
+}
+.flex-container{
+    display: flex;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+.navigation-bar{
+    background-color: var(--darker-background);
+    display: flex;
+    border-radius: 5px;
+    box-shadow:  9px 9px 17px #1c1e20,
+    -9px -9px 17px #3c4046;
+    justify-content: space-evenly;
+    margin: 0px auto;
+}
+.footer-button{
+    background-color: var(--darker-background);
+    display: flex;
+    border-radius: 5px;
+    box-shadow:  9px 9px 17px #1c1e20,
+    -9px -9px 17px #3c4046;
+    justify-content: space-evenly;
+    margin: 0px auto;
+}
+.navigation-bar a{
+    text-decoration: none;
+    margin: 0.8em 0em;
+    padding: 0.5em 0.7em;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #2f3237, #282a2e);
+    box-shadow:  11px 11px 22px #18191c,
+    -11px -11px 22px #40454a;
+    border-width: 0;
+    color: var(--clickable-text-color);
+}
+.footer-button button{
+    text-decoration: none;
+    margin: 0.8em 0em;
+    padding: 0.5em 0.7em;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #2f3237, #282a2e);
+    box-shadow:  11px 11px 22px #18191c,
+    -11px -11px 22px #40454a;
+    border-width: 0;
+    color: var(--clickable-text-color);
+    font-family: squada;
+    letter-spacing: 0.08em;
+}
+.footer-button button:hover{
+    cursor: pointer;
+}
+.footer-button button:active{
+    border-radius: 50px;
+    background: linear-gradient(145deg, #282a2e, #2f3237);
+    box-shadow:  11px 11px 30px #181a1c,
+    -11px -11px 30px #40444a;
+}
+.navigation-bar a:visited{
+    color: var(--clickable-text-color);
+}
+.navigation-bar a:active{
+    border-radius: 50px;
+    background: linear-gradient(145deg, #282a2e, #2f3237);
+    box-shadow:  11px 11px 30px #181a1c,
+    -11px -11px 30px #40444a;
+}
+.list{
+    background-color: var(--darker-background);
+    display: flex;
+    border-radius: 5px;
+    background: #2C2F33;
+    box-shadow:  9px 9px 17px #1c1e20,
+    -9px -9px 17px #3c4046;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.list a{
+    color: var(--clickable-text-color);
+    text-decoration: none;
+    list-style-type: none;
+    padding: 1em 1.5em;
+    text-align: center;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #2f3237, #282a2e);
+    box-shadow:  11px 11px 22px #18191c,
+    -11px -11px 22px #40454a;
+}
+.list a:visited{
+    color: var(--clickable-text-color);
+}
+.list a:active{
+    border-radius: 10px;
+    background: linear-gradient(145deg, #282a2e, #2f3237);
+    box-shadow:  11px 11px 30px #181a1c, -11px -11px 30px #40444a;
+}
+.common-text{
+    background-color: var(--clickable-text-color);
+    text-align: center;
+    padding: 1em;
+    color: var(--common-text-color);
+}
+.form-text{
+    background-color: var(--darker-background);
+    border-radius: 5px;
+    box-shadow:  9px 9px 17px #1c1e20,
+    -9px -9px 17px #3c4046;
+    font-weight: normal;
+    display: inline-block;
+}
+body{
+    background: var(--default-background);
+    color: var(--default-font-color);
+}
+input{
+    font-family: squada;
+}
+.content-frame{
+    display: flex;
+    flex-direction: column;
+}
+.content-frame p{
+    text-align: center;
+}
+.input-align{
+    display: inline-block;
+    width: 8em;
+}
+.submit-button{
+    text-decoration: none;
+    margin: 0.8em 0em;
+    padding: 0.5em 0.7em;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #2f3237, #282a2e);
+    box-shadow:  11px 11px 22px #18191c,
+    -11px -11px 22px #40454a;
+    border: none;
+    color: var(--clickable-text-color);
+    max-width: 15em;
+    letter-spacing: 0.08em;
+}
+.submit-button:hover{
+    cursor: pointer;
+}
+.submit-button:active{
+    border-radius: 50px;
+    background: linear-gradient(145deg, #282a2e, #2f3237);
+    box-shadow:  11px 11px 30px #181a1c,
+    -11px -11px 30px #40444a;
+}
+.input-radio{
+    display: flex;
+}
+
+/*mobile*/
+.sign{
+    margin: 1.5rem 1rem;
+}
+.form-sign{
+    margin: 1.5rem 0;
+}
+.navigation-bar{
+    max-width: 270px;
+    min-width: 200px;
+}
+.footer-button{
+    max-width: 6em;
+}
+.page-title{
+    font-size: 1.2rem;
+}
+.page-sub-title{
+    font-size: 1rem;
+}
+.navigation-bar a{
+    font-size: 0.8rem;
+}
+.footer-button button{
+    font-size: 0.8rem;
+}
+.list{
+    margin: 0 auto;
+    width: 200px;
+    max-width: 500px;
+}
+.list a{
+    margin: 2rem 0;
+    font-size: 0.8rem;
+    width: 5.2em;
+}
+.common-text{
+    font-size: 0.7rem;
+    margin-top: 1.5rem;
+}
+.form-text{
+    padding: 0.6em 0.8em;
+    font-size: 0.7rem;
+}
+.content-frame{
+    margin: 0 auto;
+    width: 200px;
+    max-width: 500px;
+}
+.input-spacing{
+    margin-top: 1.5em;
+}
+.input-radio{
+    font-size: 0.7rem;
+    margin-top: 2.2em;
+    min-width: 3rem;
+}
+.end{
+    height: 1rem;
+}
+label span{
+    font-size: 0.7rem;
+}
+.submit-button{
+    margin: 2.2em;
+    font-size: 0.7rem;
+}
+.margem-button{
+    margin: 1.5em auto;
+}
+
+/*demais tamanhos*/
+@media screen and (min-width: 400px){
+    .list{
+        width: auto;
+        margin: 0 1rem;
+    }
+    .content-frame{
+         width: auto;
+         margin: 0 1rem;
+    }
+    .submit-button{
+        width: 15em;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media screen and (min-width: 532px){
+    .list{
+        margin: 0 auto;
+    }
+    .content-frame{
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 720px){
+    .sign{
+        box-shadow: rgba(17, 255, 238, 0.4) 4px 4px 6px,
+        rgba(17, 255, 238, 0.3) 4px 9px 15px -5px,
+        rgba(17, 255, 238, 0.2) -4px -4px 2px inset;
+        border-radius: 10px;
+        padding: 1em;
+        background: var(--darker-background);
+        margin: 2.5rem 1rem;
+    }
+    .form-sign{
+        box-shadow: rgba(17, 255, 238, 0.4) 4px 4px 6px,
+        rgba(17, 255, 238, 0.3) 4px 9px 15px -5px,
+        rgba(17, 255, 238, 0.2) -4px -4px 2px inset;
+        border-radius: 10px;
+        padding: 1em;
+        background: var(--darker-background);
+        margin: 2.5rem 0;
+    }
+    .navigation-bar{
+        max-width: 450px;
+    }
+    .page-title{
+        font-size: 2rem;
+    }
+    .page-sub-title{
+        font-size: 1.8rem;
+    }
+    .navigation-bar a{
+        font-size: 1.3rem;
+    }
+    .footer-button{
+        max-width: 9em;
+    }
+    .footer-button button{
+        font-size: 1.3rem;
+    }
+    .content-frame{
+        max-width: 650px;
+    }
+    .list a{
+        font-size: 1.3rem;
+        margin: 3rem 0;
+    }
+    .common-text{
+        font-size: 1.2rem;
+        margin-top: 2.5rem;
+    }
+    .form-text{
+        font-size: 1.2rem;
+    }
+    .input-spacing{
+        margin-top: 2.5em;
+    }
+    label span{
+        font-size: 1.2rem;
+    }
+    .submit-button{
+        font-size: 1.2rem;
+    }
+    .margem-button{
+        margin: 2.5em auto;
+    }
+    .input-radio{
+        font-size: 1.2rem;
+        margin-top: 2.1em;
+    }
+}
